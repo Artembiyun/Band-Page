@@ -1,0 +1,490 @@
+$box-color1: #FFFFFF;
+$box-color2: #F9F9F9;
+
+$font-color1: white;
+$font-color2: black;
+
+$color1: rgba(170, 170, 170, 0.705);
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../Assets/Typography/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url('../Assets/Typography/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-light';
+    src: url('../Assets/Typography/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-thin';
+    src: url('../Assets/Typography/Poppins-Thin.ttf');
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0px;
+}
+
+nav {
+    padding-left: 120px;
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-box {
+    width: 200px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: black;
+}
+
+.hero-button {
+    background-color: rgba(160, 160, 160, 0.5);
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 12px 42px;
+    margin-top: 40px;
+    transition: 0.3s;
+
+    &.hero-button:hover {
+        background-color: rgba(160, 160, 160, 0.7);
+    }
+}
+
+.shows-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(192, 192, 192, 0.61);
+    min-width: 130px;
+    height: 50px;
+    border: 1.8px solid white;
+    border-radius: 6px;
+
+    &.shows-button:hover {
+        background-color: rgba(160, 160, 160, 0.7);
+    }
+}
+
+table {
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap; 
+    font-family: Poppins-light;
+    max-width: 100%;
+    border-spacing: 0px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+th,
+td {
+    width: 200px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+button[type=submit] {
+    font-family: 'Poppins';
+    margin: 0px;
+    background-color: #272727;
+    border: 2px solid white;
+    color: white;
+    border-radius: 4px;
+    padding: 12px 30px;
+    margin-bottom: 40px;
+}
+
+.hero-box {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Assets/Images/ana-grave-156852-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &.shows {
+        color: white;
+        flex-direction: column;
+        min-height: 140vh;
+        background-image: url(../Assets/Images/hanny-naibaho-388579-unsplash1.png);
+    }
+}
+
+.hero-text {
+    color: $font-color1;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $box-color1;
+
+    &.v2 {
+        background-color: $box-color2;
+    }
+
+    &.v3 {
+        height: auto;
+        padding-top: 0px;
+    }
+
+    &.comments {
+        align-items: flex-start;
+    }
+}
+
+#commentHolder {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $color1;
+    padding-bottom: 40px;
+}
+
+.comment-box {
+    height: auto;
+    max-width: 485px;
+    padding: 15px 0 20px 20px;
+    border-bottom: 1px solid $color1;
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 80%;
+    width: 90%;
+    justify-content: space-between;
+
+    &.gal {
+        margin-bottom: 60px;
+    }
+
+    &.com {
+        max-width: 500px;
+        align-content: flex-start;
+        flex-direction: column;
+        margin-left: 200px;
+    }
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: flex-end;
+    padding: 120px 0px 0px 0px;
+    margin-bottom: 50px;
+}
+
+.box {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-box {
+    height: 100%;
+    width: 60%;
+
+    &.left {
+        width: 35%;
+    }
+
+    &.music {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 326px;
+    }
+}
+
+.showcase {
+    margin-bottom: 40px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.showcase-box {
+    background-size: cover;
+    background-position: center;
+    margin: 8px;
+    transition: 0.3s;
+
+
+    &.music-box {
+        background-image: url(../Assets/Images/bryan-minear-315773-unsplash.jpg);
+        align-self: center;
+        height: 326px;
+        width: 326px;
+        margin: 0px;
+    }
+
+    &.gallery {
+        height: 285px;
+        width: 285px;
+
+        &.a1 {
+            background-image: url(../Assets/Images/abigail-keenan-83615-unsplash.jpg);
+        }
+
+        &.a2 {
+            background-image: url(../Assets/Images/ana-grave-156852-unsplash.jpg);
+        }
+
+        &.a3 {
+            background-image: url(../Assets/Images/bryan-minear-315773-unsplash.jpg);
+        }
+
+        &.a4 {
+            background-image: url(../Assets/Images/ciprian-boiciuc-330413-unsplash.jpg);
+        }
+
+        &.a5 {
+            background-image: url(../Assets/Images/felix-russell-saw-106848-unsplash.jpg);
+        }
+
+        &.a6 {
+            background-image: url(../Assets/Images/francisco-moreno-110533-unsplash.jpg);
+        }
+
+        &.a7 {
+            background-image: url(../Assets/Images/hanny-naibaho-388579-unsplash.jpg);
+        }
+
+        &.a8 {
+            background-image: url(../Assets/Images/wesley-tingey-223059-unsplash.jpg);
+        }
+
+        &.a9 {
+            background-image: url(../Assets/Images/ian-dooley-281855-unsplash.jpg);
+        }
+
+        &.a10 {
+            background-image: url(../Assets/Images/melanie-van-leeuwen-83775-unsplash.jpg);
+        }
+
+        &.a11 {
+            background-image: url(../Assets/Images/mike-giles-5655-unsplash.jpg);
+        }
+
+        &.a12 {
+            background-image: url(../Assets/Images/paulette-wooten-223050-unsplash.jpg);
+        }
+    }
+}
+
+.showcase-box:hover {
+    opacity: 0.8;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 4px;
+}
+
+footer {
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #272727;
+}
+
+.contact-holder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact {
+    margin-top: 60px;
+    width: 250px;
+}
+
+.socialmedia-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.socialmedia-icon {
+    background-size: contain;
+    background-position: fixed;
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    font-size: 84px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 64px;
+    margin: 0px 0px 0px 60px;
+    font-family: 'Poppins-bold';
+}
+
+h3 {
+    font-family: 'Poppins-thin';
+    font-size: 36px;
+    margin: 0px 0px 60px 0px;
+}
+
+h4 {
+    margin: 0px;
+    display: inline-block;
+
+    &#comName {
+        color: $font-color2;
+    }
+
+    &#comDate {
+        font-weight: 16;
+        color: $color1;
+        margin-left: 10px;
+    }
+
+    &#comText {
+        font-weight: 10;
+        margin-top: 10px;
+        color: $font-color2;
+        display: block;
+    }
+}
+
+p {
+    font-size: 22px;
+
+    &.comment_forms {
+        margin: 0px;
+    }
+
+}
+
+.copyright {
+    padding: 200px 0px 0px 60px;
+    width: 100%;
+    font-size: 10px;
+}
+
+.paragraph2 {
+    font-family: 'Poppins-bold';
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+
+    .content {
+        &.comments {
+            align-items: center;
+        }
+    }
+
+    .content-box {
+        flex-wrap: wrap;
+
+        &.com {
+            margin-left: 0px;
+        }
+    }
+
+    .inner-box {
+        height: auto;
+        width: 100%;
+
+        &.left {
+            width: 100%;
+        }
+
+        &.music {
+            align-items: center;
+        }
+    }
+
+    .title {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-box {
+        display: none;
+    }
+
+    nav {
+        background-color: rgba(65, 65, 65, 0.5);
+
+    }
+
+}
